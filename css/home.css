@@ -1,0 +1,197 @@
+.header {
+    background-color: #1e2a78;
+}
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: 80px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 75px;
+
+}
+.navbar li {
+    color: white;
+}
+.navbar li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+.navbar .agora a {
+    color: #facc15;
+}
+.acoes {
+    display: flex;
+    gap: 20px;
+}
+.acoes .butEntrar {
+    background-color: #0b0f2a;
+    border: 2px solid white;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 6px;
+}
+.acoes .butCadastrar {
+    background-color: #facc15;
+    border: 2px solid black;
+    padding: 6px 15px;
+    border-radius: 6px;
+    color: #1e2a78;
+    font-weight: bold;   
+}
+
+.banner1 {
+    height: 600px;
+    background-image: url(../img/fundo.png);
+    background-size: cover;
+    background-position: center;
+    padding-left: 150px;
+}
+.banner1 .banner1Conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.banner1Conteudo .imgPersonagens{
+    display: flex;
+    align-items: center;   
+    justify-content: flex-end; 
+    margin-right: 85px;
+    height: 100%;
+}
+.banner1 .banner1Conteudo .tit1{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.banner1 .banner1Conteudo .tit2{
+    color: #facc15;
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+.banner1 .banner1Conteudo .texto{
+    color: white;
+}
+.banner1 .acoes{
+    display: flex;
+    gap: 30px;
+}
+.butExplorar{
+    background-color: #2d5bff;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    color: white; 
+}
+.butQuiz{
+    background-color: #0b0f2a;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    color: white;
+}
+.banner2 {
+    background-color: #0b0f2a;
+    min-height: 800px
+}
+.banner2 .banner2Conteudo{
+
+}
+.banner2Conteudo .banner2Tit{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.banner2Conteudo .titPri{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.banner2 .cardsPags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.banner2 .card{
+    background-color: #1e2a78;
+    border: 2px solid #2d5bff;
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.banner2 .card .tit1 {
+    color: #0037ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.banner2 .card .tit2 {
+    color: #d12a2a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.banner2 .card .tit3 {
+    color: #00bf63;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.banner2 .card .tit4 {
+    color: #facc15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.banner2 .card .tit5 {
+    color: #8c52ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.banner2 .card .tit6 {
+    color: #0037ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.banner2 .card .text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 10px;
+}
+

@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: #0b1f6a; 
+}
+.banner {
+    display: flex;
+    gap: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.ladoEsquerdo {
+    width: 50%;
+    background-image: url(../img/fundoCadastroBrawlers.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 92% 110%, 0% 100%);
+}
+
+.ladoEsquerdo .topo {
+    display: flex;
+    justify-content: center;
+}
+.ladoEsquerdo .topo img{
+    width: 250px;
+    height: 200px;
+}
+.ladoEsquerdo .imgBrawlers {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    margin-bottom: 25px;
+}
+.ladoEsquerdo .imgBrawlers img{
+    width: 600px;
+    height: 500px;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 46%;
+    width: 4px; 
+    height: 100%; 
+    background: #0037ff;
+    transform: translateX(-50%) rotate(4deg);
+    z-index: 10;
+}
+
+.ladoDireito {
+    margin-left: -5%;
+    width: 60%;
+    background-image: url(../img/fundoCadastro.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+}
+.ladoDireito .cardCadastrar {
+    width: 500px;
+    height: 500px;
+    background-color: #000a30;
+    border-radius: 20px;
+    border: 3px solid #0037ff;
+    margin-top: 100px;
+    margin-right: -80px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ladoDireito .cardCadastrar .tit{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+.ladoDireito .cardCadastrar .tit img{
+    width: 70px;
+    height: 85px;
+    margin-top: 50px;
+}
+.ladoDireito .cardCadastrar .tit .p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.ladoDireito .cardCadastrar .tit .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #facc15;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.ladoDireito .cardCadastrar .textTit p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: -25px;
+    margin-left: 85px;
+}
+.ladoDireito .cardCadastrar .inpCadastrar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+.ladoDireito .cardCadastrar .inpCadastrar input {
+    background-color: #000725;
+    width: 380px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #06238c;
+}
+.ladoDireito .cardCadastrar button {
+    margin-top: 20px;
+    width: 380px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #facc15;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ladoDireito .cardCadastrar .fraF p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ladoDireito .cardCadastrar .fraF a {
+    color: #022abd;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.footer {
+    background-color: #1e2a78;
+    padding: 5px;
+    border-top: 2px solid #0037ff;
+}
+.footer .textFooter{
+    color: white;
+    margin-left: 40px;
+}

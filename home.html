@@ -6,8 +6,9 @@
     <title>Brawl Stars Web | Home</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
-<body class="home-page">
+<body>
     <div class="header">
         <div class="container">
             <div class="logo">
@@ -15,30 +16,57 @@
             </div>
             <div class="navbar">
                 <li class="agora">
+                    <div class="iconNav">
+                        <img src="img/home_branco.png" alt="Ícone inicio">
+                    </div>
                     <a href="#">INÍCIO</a>
                 </li>
                 <li>
+                    <div class="iconNav2">
+                        <img src="img/caveira.png" alt="Ícone inicio">
+                    </div>
                     <a href="brawlers.html">BRAWLERS</a>
                 </li>
                 <li>
+                    <div class="iconNav">
+                        <img src="img/mira_branco.png" alt="Ícone inicio">
+                    </div>
                     <a href="modos.html">MODOS DE JOGO</a>
                 </li>
                 <li>
+                    <div class="iconNav">
+                        <img src="img/mao_branco.png" alt="Ícone inicio">
+                    </div>
                     <a href="mecanicas.html">MECÂNICAS</a>
                 </li>
                 <li>
+                    <div class="iconNav">
+                        <img src="img/trofeu_branco.png" alt="Ícone inicio">
+                    </div>
                     <a href="competitivo.html">COMPETITIVO</a>
                 </li>
                 <li>
+                    <div class="iconNav">
+                        <img src="img/quiz_branco.png" alt="Ícone inicio">
+                    </div>
                     <a href="quiz.html">QUIZ</a>
                 </li>
                 <li>
+                    <div class="iconNav">
+                        <img src="img/dash_branco.png" alt="Ícone inicio">
+                    </div>
                     <a href="dashboard.html">DASHBOARD</a>
                 </li>
             </div>
             <div class="acoes">
-                <button class="butEntrar" onclick="entrar()">ENTRAR</button>
-                <button class="butCadastrar" onclick="cadastrar()">CADASTRAR</button>
+                <button class="butEntrar" onclick="window.location.href='login.html'">
+                    <img src="img/usuario_branco.png" alt="Ícone login">
+                    ENTRAR
+                </button>
+                <button class="butCadastrar" onclick="window.location.href='cadastro.html'">
+                    <img src="img/addusuario_branco.png" alt="Ícone add usuário">
+                    CADASTRAR
+                </button>
             </div>
         </div>
     </div>
@@ -50,11 +78,10 @@
                     <h1 class="tit1">BEM-VINDO AO</h1>
                     <h1 class="tit2">MUNDO BRAWL!</h1>
                 </div>
-                
-                <p class="texto"> Tudo sobre Brawl Stars  em um só lugar! <br> Conheça os Brawlers, os modos de jogo,  as mecânicas <br> e mergulhe no cenário competitivo do jogo. <br> Faça o quiz e descubra com qual Brawler você mais se identifica!</p>
-                <div class="acoes">
-                    <button class="butExplorar" onclick="butExplorar()">EXPLORAR O SITE</button>
-                    <button class="butQuiz" onclick="butQuiz()">FAZER QUIZ</button>
+                <div class="texto">
+                    <p>
+                        Brawl Stars é um jogo de ação e estratégia com batalhas rápidas e cheias de habilidade. Cada Brawler possui ataques e habilidades únicas, e os modos de jogo variam entre objetivos diferentes, como coletar gemas, sobreviver ou marcar pontos. Explore o universo do jogo, conheça os personagens e descubra as principais mecânicas que tornam cada partida dinâmica e competitiva.
+                    </p>
                 </div>
             </div>
             <div class="imgPersonagens">
@@ -66,75 +93,91 @@
     <div class="banner2">
         <div class="banner2Conteudo">
             <div class="banner2Tit">
-                <h2 class="titPri">NAVEGUE PELO SITE</h2>
+                <h2 class="titPri">— NAVEGUE PELO SITE —</h2>
             </div>
             <div class="cardsPags">
                 <div class="card">
-                    <div class="bolinhaCard">
-                        <img src="" alt="Ícone caveira">
+                    <div class="bolinhaCard1">
+                        <img src="img/caveira.png" alt="Ícone caveira">
                     </div>
                     <div class="imgCard1">
-                        <img src="" alt="Personagem Spike">
+                        <img src="img/spike.png" alt="Personagem Spike">
                     </div>
                     <h3 class="tit1">BRAWLERS</h3>
                     <p class="text">Conheça os Brawlers, suas características, ataques e habilidades</p>
                 </div>
                 <div class="card">
-                    <div class="bolinhaCard">
-                        <img src="" alt="Ícone mira">
+                    <div class="bolinhaCard2">
+                        <img src="img/mira_branco.png" alt="Ícone mira">
                     </div>
                     <div class="imgCard2">
-                        <img src="" alt="Bola de Futebol">
-                        <img src="" alt="Gema">
+                        <img class="i1" src="img/Fute-Brawl.webp" alt="Bola de Futebol">
+                        <img class="i2" src="img/Pique-Gema.webp" alt="Gema">
                     </div>
                     <h3 class="tit2">MODOS JOGO</h3>
                     <p class="text">Conheça os Brawlers, suas características, ataques e habilidades</p>
                 </div>
                 <div class="card">
-                    <div class="bolinhaCard">
-                        <img src="" alt="Ícone força">
+                    <div class="bolinhaCard3">
+                        <img src="img/mao_branco.png" alt="Ícone força">
                     </div>
                     <div class="imgCard3">
-                        <img src="" alt="Acessório">
+                        <img src="img/acessorio.png" alt="Acessório">
                     </div>
                     <h3 class="tit3">MECÂNICAS</h3>
                     <p class="text">Conheça os Brawlers, suas características, ataques e habilidades</p>
                 </div>
                 <div class="card">
-                    <div class="bolinhaCard">
-                        <img src="" alt="Ícone troféu">
+                    <div class="bolinhaCard4">
+                        <img src="img/trofeu_branco.png" alt="Ícone troféu">
                     </div>
                     <div class="imgCard4">
-                        <img src="" alt="Troféu">
+                        <img src="img/trofeu.png" alt="Troféu">
                     </div>
                     <h3 class="tit4">COMPETITIVO</h3>
                     <p class="text">Conheça os Brawlers, suas características, ataques e habilidades</p>
                 </div>
                 <div class="card">
-                    <div class="bolinhaCard">
-                        <img src="" alt="Ícone lupa">
+                    <div class="bolinhaCard5">
+                        <img src="img/quiz_branco.png" alt="Ícone lupa">
                     </div>
                     <div class="imgCard5">
-                        <img src="" alt="Quiz">
+                        <img src="img/quiz.png" alt="Quiz">
                     </div>
                     <h3 class="tit5">QUIZ</h3>
                     <p class="text">Conheça os Brawlers, suas características, ataques e habilidades</p>
                 </div>
                 <div class="card">
-                    <div class="bolinhaCard">
-                        <img src="" alt="Ícone gráficos">
+                    <div class="bolinhaCard6">
+                        <img src="img/dash_branco.png" alt="Ícone gráficos">
                     </div>
                     <div class="imgCard6">
-                        <img src="" alt="Dashboard">
+                        <img src="img/dash.png" alt="Dashboard">
                     </div>
                     <h3 class="tit6">DASHBOARD</h3>
                     <p class="text">Conheça os Brawlers, suas características, ataques e habilidades</p>
                 </div>
             </div>
+            <div class="partFinal">
+                <div class="cardFinal">
+                    <div class="imgP">
+                        <img src="img/estrela.png" alt="Estrela do Brawl">
+                    </div>
+                    <div class="textFinal">
+                        <h3>SOBRE O PROJETO</h3>
+                        <p>
+                        Um espaço criado para reunir, explorar e aprender sobre o universo de Brawl Stars, com conteúdos interativos e informações essenciais para quem quer dominar o jogo.
+                        </p>
+                    </div>
+                    <div class="artFinal">
+                        <img src="img/arteBrawlers.jpg" alt="Arte dos Brawlers">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
-      rodape
+        <p class="textFooter">2026 Brawl Stars Web. Todos os direitos reservados.</p>
     </div>
 </body>
 </html>

@@ -138,7 +138,7 @@ body{
 
 .banner2 {
     background-color: #0b0f2a;
-    min-height: 750px
+    min-height: 710px
 }
 .banner2Conteudo .banner2Tit{
     display: flex;
@@ -171,8 +171,105 @@ body{
 .banner2 .card:hover{
     transform: translateY(-10px);
 }
+/* CARD BASE */
+.banner2 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-/* CARD 1 */
+    height: 280px; /* mantém tudo alinhado */
+    padding: 10px;
+}
+
+/* BOLINHAS (mantidas iguais) */
+.banner2 .card .bolinhaCard1,
+.banner2 .card .bolinhaCard2,
+.banner2 .card .bolinhaCard3,
+.banner2 .card .bolinhaCard4,
+.banner2 .card .bolinhaCard5,
+.banner2 .card .bolinhaCard6 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CORES DAS BOLINHAS */
+.bolinhaCard1 { background-color: #0037ff; }
+.bolinhaCard2 { background-color: #d12a2a; }
+.bolinhaCard3 { background-color: #00bf63; }
+.bolinhaCard4 { background-color: #facc15; }
+.bolinhaCard5 { background-color: #8c52ff; }
+.bolinhaCard6 { background-color: #0037ff; }
+
+/* TAMANHO ÍCONES */
+.bolinhaCard1 img { width: 30px; height: 30px; }
+.bolinhaCard2 img { width: 23px; height: 23px; }
+.bolinhaCard3 img { width: 18px; height: 18px; }
+.bolinhaCard4 img { width: 25px; height: 25px; }
+.bolinhaCard5 img { width: 20px; height: 20px; }
+.bolinhaCard6 img { width: 20px; height: 20px; }
+
+/* ÁREA DAS IMAGENS (PADRONIZAÇÃO) */
+.card .imgCard1,
+.card .imgCard2,
+.card .imgCard3,
+.card .imgCard4,
+.card .imgCard5,
+.card .imgCard6 {
+    height: 130px; /* controla alinhamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+/* TAMANHOS ORIGINAIS DAS IMAGENS */
+.card .imgCard1 img { width: 150px; height: 150px; }
+.card .imgCard2 img { width: 90px; height: 90px; }
+.card .imgCard3 img { width: 120px; height: 120px; }
+.card .imgCard4 img { width: 120px; height: 120px; }
+.card .imgCard5 img { width: 170px; height: 170px; }
+.card .imgCard6 img { width: 110px; height: 110px; }
+
+/* TITULOS (ALINHADOS) */
+.banner2 .card .tit1,
+.banner2 .card .tit2,
+.banner2 .card .tit3,
+.banner2 .card .tit4,
+.banner2 .card .tit5,
+.banner2 .card .tit6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+    align-self: center;
+    text-align: center;
+}
+
+/* CORES DOS TITULOS */
+.tit1 { color: #0037ff; }
+.tit2 { color: #d12a2a; }
+.tit3 { color: #00bf63; }
+.tit4 { color: #facc15; }
+.tit5 { color: #8c52ff; }
+.tit6 { color: #0037ff; }
+
+/* TEXTO */
+.banner2 .card .text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+/* 
 .banner2 .card .bolinhaCard1{
     background-color: #0037ff;
     width: 30px;
@@ -208,7 +305,6 @@ body{
     margin-left: 10px;
 }
 
-/* CARD 2 */
 .banner2 .card .bolinhaCard2{
     background-color: #d12a2a;
     width: 30px;
@@ -248,7 +344,6 @@ body{
     margin-bottom: -35px;
     margin-left: 10px;
 }
-/* CARD 3 */
 .banner2 .card .bolinhaCard3{
     background-color: #00bf63;
     width: 30px;
@@ -284,7 +379,6 @@ body{
     margin-left: 10px;
 }
 
-/* CARD 4 */
 .banner2 .card .bolinhaCard4{
     background-color: #facc15;
     width: 30px;
@@ -320,7 +414,6 @@ body{
     margin-left: 10px;
 }
 
-/* CARD 5 */
 .banner2 .card .bolinhaCard5{
     background-color: #8c52ff;
     width: 30px;
@@ -356,7 +449,6 @@ body{
     margin-left: 10px;
 }
 
-/* CARD 6 */
 .banner2 .card .bolinhaCard6{
     background-color: #0037ff;
     width: 30px;
@@ -396,7 +488,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin: 10px;
-}
+} 
+*/
 .banner2 .partFinal{
     display: flex;
     justify-content: center;

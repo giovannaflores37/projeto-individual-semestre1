@@ -6,6 +6,7 @@
     <title>Brawl Stars Web | Login</title>
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="js/login.js" defer></script>
 </head>
 <body>
     <div class="banner">
@@ -35,9 +36,9 @@
                     <p>Acesse sua conta para continuar</p>
                 </div>
                 <div class="inpLogin">
-                    <input type="text" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <button>ENTRAR</button>
+                    <input id="input_emailL" type="text" placeholder="E-mail">
+                    <input id="input_senhaL" type="password" placeholder="Senha">
+                    <button onclick="valiEntrar()">ENTRAR</button>
                 </div>
                 <div class="fraF">
                     <p>Não tem uma conta?  <a href="cadastro.html">CADASTRAR</a></p>

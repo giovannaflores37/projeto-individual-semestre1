@@ -117,6 +117,7 @@ body {
 }
 .ladoDireito .cardLog .inpLogin input {
     background-color: #000725;
+    color: white;
     width: 380px;
     height: 40px;
     border-radius: 8px;

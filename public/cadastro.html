@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brawl Stars Web | Cadastro</title>
     <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/cadastro.js" defer></script>
 </head>
 <body>
     <div class="banner">
@@ -35,12 +36,12 @@
                     <p>Preencha os campos para se cadastrar</p>
                 </div>
                 <div class="inpCadastrar">
-                    <input type="text" placeholder="Nome de usuário">
-                    <input type="text" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <input type="password" placeholder="Confirmar senha">
+                    <input id="input_nome" type="text" placeholder="Nome de usuário">
+                    <input id="input_email" type="text" placeholder="E-mail">
+                    <input id="input_senha" type="password" placeholder="Senha">
+                    <input id="input_confSenha" type="password" placeholder="Confirmar senha">
                 </div>
-                <button>CADASTRAR</button>
+                <button onclick="Valicadastrar()" >CADASTRAR</button>
                 <div class="fraF">
                     <p>Já tem uma conta?  <a href="login.html">ENTRAR</a></p>
                 </div>

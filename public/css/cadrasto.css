@@ -50,7 +50,7 @@ body {
     text-align: center;
 }
 .ladoEsquerdo .imgBrawlers {
-    margin-left: 80px;
+    margin-left: 10px;
     margin-top: 10px;   
 }
 .ladoEsquerdo img{
@@ -70,54 +70,69 @@ body {
     justify-content: center;
 }
 .ladoDireito .topo img{
-    width: 200px;
-    height: 160px;
-    margin-bottom: 10px;
-    margin-top: -5px;
+    width: 170px;
+    height: 130px;
+    margin-bottom: 4px;
+    margin-top: -2px;
 }
-.ladoDireito .cardLog {
+.ladoDireito .cardCadastrar {
     width: 500px;
-    height: 400px;
+    height: 500px;
     background-color: #000a30;
     border-radius: 20px;
     border: 3px solid #0037ff;
     
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
-.ladoDireito .cardLog .tit{
+
+.ladoDireito .cardCadastrar .tit{
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
+    justify-content: center;
 }
-.ladoDireito .cardLog .tit img{
+.ladoDireito .cardCadastrar .tit img{
     width: 70px;
     height: 85px;
-    margin-top: 25px;
-    margin-left: 50px;
+    margin-top: 45px;
 }
-.ladoDireito .cardLog .tit h2 {
+.ladoDireito .cardCadastrar .tit .tits{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.ladoDireito .cardCadastrar .tit .titCentral {
+    display: flex;
+    flex-direction: column;
+}
+.ladoDireito .cardCadastrar .tit .p1 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 40px;
-    margin-top: 50px; 
-    margin-left: 40px;
+    margin-top: 50px;
 }
-.ladoDireito .cardLog .textTit p {
+.ladoDireito .cardCadastrar .tit .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #facc15;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.ladoDireito .cardCadastrar .textTit p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin-left: 140px;
     margin-top: -25px;
 }
-.ladoDireito .cardLog .inpLogin {
+.ladoDireito .cardCadastrar .inpCadastrar {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 12px;
     margin-top: 10px;
 }
-.ladoDireito .cardLog .inpLogin input {
+.ladoDireito .cardCadastrar .inpCadastrar input {
     background-color: #000725;
     color: white;
     width: 380px;
@@ -125,7 +140,7 @@ body {
     border-radius: 8px;
     border: 1px solid #06238c;
 }
-.ladoDireito .cardLog button {
+.ladoDireito .cardCadastrar button {
     margin-top: 20px;
     width: 380px;
     height: 40px;
@@ -141,11 +156,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-.ladoDireito .cardLog .fraF {
-    display: flex;
-    justify-content: center;
-}
-.ladoDireito .cardLog .fraF p {
+.ladoDireito .cardCadastrar .fraF p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -156,11 +167,12 @@ body {
 }
 
 .footer {
-    background-color: #1e2a78;
+    background-color: #06238c;
     padding: 5px;
-    border-top: 2px solid #0037ff;
+    display: flex;
+    justify-content: flex-start;
 }
 .footer .textFooter{
     color: white;
-    margin-left: 40px;
+    margin-left: 35px;
 }

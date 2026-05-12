@@ -12,8 +12,10 @@ body{
     align-items: center;
 }
 .logo img{
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 .navbar {
     display: flex;
@@ -22,21 +24,22 @@ body{
     align-items: center;
     gap: 40px;
 }
-.navbar li{
+.navbar li {
     display: flex;
-    flex-direction: row;
+    align-items: center; 
+    gap: 5px; 
 }
-.navbar li .iconNav img {
+.navbar li .iconNav img,
+.navbar li .iconNav2 img {
+    display: block;
+}
+.iconNav img {
     width: 20px;
     height: 20px;
-    margin-top: -2px;
-    margin-right: 5px;
 }
-.navbar li .iconNav2 img {
+.iconNav2 img {
     width: 25px;
     height: 25px;
-    margin-top: -2px;
-    margin-right: 5px;
 }
 .navbar li a {
     color: white;
@@ -138,17 +141,6 @@ body{
 
 .banner2 {
     background-color: #0b0f2a;
-    min-height: 710px
-}
-.banner2Conteudo .banner2Tit{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-.banner2Conteudo .titPri{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
 }
 .banner2 .cardsPags {
     display: flex;
@@ -157,6 +149,11 @@ body{
     padding-top: 40px;
     margin-right: 40px;
     margin-left: 40px;
+}
+.banner2 .cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 .banner2 .card{
     background-color: #1e2a78;
@@ -171,18 +168,15 @@ body{
 .banner2 .card:hover{
     transform: translateY(-10px);
 }
-/* CARD BASE */
 .banner2 .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 
-    height: 280px; /* mantém tudo alinhado */
+    height: 280px; 
     padding: 10px;
 }
-
-/* BOLINHAS (mantidas iguais) */
 .banner2 .card .bolinhaCard1,
 .banner2 .card .bolinhaCard2,
 .banner2 .card .bolinhaCard3,
@@ -197,8 +191,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-/* CORES DAS BOLINHAS */
 .bolinhaCard1 { background-color: #0037ff; }
 .bolinhaCard2 { background-color: #d12a2a; }
 .bolinhaCard3 { background-color: #00bf63; }
@@ -206,7 +198,6 @@ body{
 .bolinhaCard5 { background-color: #8c52ff; }
 .bolinhaCard6 { background-color: #0037ff; }
 
-/* TAMANHO ÍCONES */
 .bolinhaCard1 img { width: 30px; height: 30px; }
 .bolinhaCard2 img { width: 23px; height: 23px; }
 .bolinhaCard3 img { width: 18px; height: 18px; }
@@ -214,14 +205,13 @@ body{
 .bolinhaCard5 img { width: 20px; height: 20px; }
 .bolinhaCard6 img { width: 20px; height: 20px; }
 
-/* ÁREA DAS IMAGENS (PADRONIZAÇÃO) */
 .card .imgCard1,
 .card .imgCard2,
 .card .imgCard3,
 .card .imgCard4,
 .card .imgCard5,
 .card .imgCard6 {
-    height: 130px; /* controla alinhamento */
+    height: 130px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +219,6 @@ body{
     text-align: center;
 }
 
-/* TAMANHOS ORIGINAIS DAS IMAGENS */
 .card .imgCard1 img { width: 150px; height: 150px; }
 .card .imgCard2 img { width: 90px; height: 90px; }
 .card .imgCard3 img { width: 120px; height: 120px; }
@@ -237,7 +226,6 @@ body{
 .card .imgCard5 img { width: 170px; height: 170px; }
 .card .imgCard6 img { width: 110px; height: 110px; }
 
-/* TITULOS (ALINHADOS) */
 .banner2 .card .tit1,
 .banner2 .card .tit2,
 .banner2 .card .tit3,
@@ -252,7 +240,6 @@ body{
     text-align: center;
 }
 
-/* CORES DOS TITULOS */
 .tit1 { color: #0037ff; }
 .tit2 { color: #d12a2a; }
 .tit3 { color: #00bf63; }
@@ -260,7 +247,6 @@ body{
 .tit5 { color: #8c52ff; }
 .tit6 { color: #0037ff; }
 
-/* TEXTO */
 .banner2 .card .text {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -269,227 +255,6 @@ body{
     margin: 0;
 }
 
-/* 
-.banner2 .card .bolinhaCard1{
-    background-color: #0037ff;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin-left: 10px;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-.bolinhaCard1 img{
-    width: 30px;
-    height: 30px;
-}
-.card .imgCard1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card .imgCard1 img{
-    width: 150px;
-    height: 150px;
-    margin: -50px;
-}
-.banner2 .card .tit1 {
-    color: #0037ff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -35px;
-    margin-left: 10px;
-}
-
-.banner2 .card .bolinhaCard2{
-    background-color: #d12a2a;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin-left: 10px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bolinhaCard2 img{
-    width: 23px;
-    height: 23px;
-}
-.card .imgCard2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.card .imgCard2 img{
-    width: 90px;
-    height: 90px;
-}
-.card .imgCard2 .i1{
-    margin-bottom: -30px;
-} 
-.card .imgCard2 .i2{
-    margin-top: -80px;
-} 
-.banner2 .card .tit2 {
-    color: #d12a2a;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -35px;
-    margin-left: 10px;
-}
-.banner2 .card .bolinhaCard3{
-    background-color: #00bf63;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin-left: 10px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bolinhaCard3 img{
-    width: 18px;
-    height: 18px;
-}
-.card .imgCard3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card .imgCard3 img{
-    width: 120px;
-    height: 120px;
-    margin: -20px;
-}
-.banner2 .card .tit3 {
-    color: #00bf63;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -35px;
-    margin-left: 10px;
-}
-
-.banner2 .card .bolinhaCard4{
-    background-color: #facc15;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin-left: 10px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bolinhaCard4 img{
-    width: 25px;
-    height: 25px;
-}
-.card .imgCard4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card .imgCard4 img{
-    width: 120px;
-    height: 120px;
-    margin: -20px;
-}
-.banner2 .card .tit4 {
-    color: #facc15;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -35px;
-    margin-left: 10px;
-}
-
-.banner2 .card .bolinhaCard5{
-    background-color: #8c52ff;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin-left: 10px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bolinhaCard5 img{
-    width: 20px;
-    height: 20px;
-}
-.card .imgCard5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card .imgCard5 img{
-    width: 170px;
-    height: 170px;
-    margin: -50px;
-}
-.banner2 .card .tit5 {
-    color: #8c52ff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -35px;
-    margin-left: 10px;
-}
-
-.banner2 .card .bolinhaCard6{
-    background-color: #0037ff;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin-left: 10px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bolinhaCard6 img{
-    width: 20px;
-    height: 20px;
-}
-.card .imgCard6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card .imgCard6 img{
-    width: 110px;
-    height: 110px;
-    margin: -20px;
-}
-.banner2 .card .tit6 {
-    color: #0037ff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -35px;
-    margin-left: 10px;
-}
-.banner2 .card .text {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin: 10px;
-} 
-*/
 .banner2 .partFinal{
     display: flex;
     justify-content: center;
@@ -538,11 +303,12 @@ body{
 }
 
 .footer {
-    background-color: #1e2a78;
+    background-color: #0b0f2a;
     padding: 5px;
-    border-top: 2px solid #0037ff;
+    display: flex;
+    justify-content: flex-end;
 }
 .footer .textFooter{
     color: white;
-    margin-left: 40px;
+    margin-right: 35px;
 }

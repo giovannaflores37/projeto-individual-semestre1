@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brawl Stars Web | Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="js/quiz.js" defer></script>
 </head>
 <body>
-    
+    <div class="banner">
+        <div class="cardInicio" id="inicio">
+            <h3>Bem-vindo ao Quiz</h3>
+            <p>Bla Bla Bla</p>
+            <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+        </div>
+
+        <div class="cardQuiz escondido" id="quiz" >
+            <div>
+                <span>Questão atual: <span id="numeroQuestaoAtual"></span> de <span id="qtdQuestoes"></span> questões.</span>
+            </div>
+            
+            <div>
+                <span id="questaoExibida"></span>
+            </div>
+            <div class="opcoes">
+                <span>
+                    <input type="radio" id="primeiraOpcao" name="option" value="alternativaA" />
+                    <label for="primeiraOpcao" id="labelOpcaoUm"></label>
+                </span>
+                <span>
+                    <input type="radio" id="segundaOpcao" name="option"  value="alternativaB" />
+                    <label for="segundaOpcao" id="labelOpcaoDois"></label>
+                </span>
+                <span>
+                    <input type="radio" id="terceiraOpcao" name="option"  value="alternativaC" />
+                    <label for="terceiraOpcao" id="labelOpcaoTres"></label>
+                </span>
+                <span>
+                    <input type="radio" id="quartaOpcao" name="option"  value="alternativaD" />
+                    <label for="quartaOpcao" id="labelOpcaoQuatro"></label>
+                </span>
+            </div>
+            <div>
+                <span>Acertos: <span id="numeroAcertos"></span></span>
+            </div>
+            <div>
+                <button id="butProxima"onclick="proximaPergunta()" disabled>Próxima</button>
+            </div>
+        </div>
+
+        <div class="cardFinal escondido" id="final">
+            <h1>QUIZ CONCLUÍDO!</h1>
+            <div>
+                <p>VOCÊ ACERTOU</p>
+                <h2><span id="acertosFinal"></span> / <span id="totalQuestoesFinal"></span></h2>
+            </div>
+            <div id="mensagemFinal"></div>
+            <div>
+                <button onclick="reiniciarQuiz()">TENTAR NOVAMENTE</button>
+                <button onclick="window.location.href='home.html'">VOLTAR AO INÍCIO</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

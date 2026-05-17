@@ -92,6 +92,7 @@ let listaPerguntas = [
 
 let respostaUsuario = [];
 let acertos = 0;
+let erros = 0;
 let iAtual = 0;
 let opcoes = document.getElementsByName("option");
 
@@ -118,13 +119,18 @@ function mostrarPergunta(){
     document.getElementById("labelOpcaoQuatro").innerText = perguntaAtual.alternativaD;
 
     acertos = 0;
+    erros = 0;
     // acertos
     for (let i = 0; i < listaPerguntas.length; i++) {
         if (respostaUsuario[i] == listaPerguntas[i].alternativaCorreta) {
-            acertos++;
+            acertos = acertos + 1;
+        }
+        else if(respostaUsuario[i] != undefined){
+            erros = erros + 1;
         }
     }
     document.getElementById("numeroAcertos").innerText = acertos;
+    document.getElementById("numeroErros").innerText = erros;
 
     // let opcoes = document.getElementsByName("option");
 
@@ -179,7 +185,7 @@ function finalizarQuiz(){
 
     for (let i = 0; i < listaPerguntas.length; i++) {
         if (respostaUsuario[i] == listaPerguntas[i].alternativaCorreta) {
-            acertosF++;
+            acertosF = acertosF + 1;
         }
     }
 

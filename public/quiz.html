@@ -66,36 +66,57 @@
         </div>
 
         <div class="cardQuiz escondido" id="quiz" >
-            <div>
-                <span>Questão atual: <span id="numeroQuestaoAtual"></span> de <span id="qtdQuestoes"></span> questões.</span>
+            <div class="topo">
+                <div class="numeroQuestao">
+                    <img  class="imgEstrela" src="img/estrela.png" alt="Estrela Brawl">
+                    <div class="text">
+                        <span class="branco">PERGUNTA <span class="amarelo" id="numeroQuestaoAtual"></span> DE <span class="amarelo" id="qtdQuestoes"></span></span>
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="acertos">
+                        <img src="img/certinho.png" alt="Acerto icone">
+                        <span class="numAcertos" id="numeroAcertos"></span>
+                    </div>
+                    <div class="erros">
+                        <img src="img/erro.png" alt="Erro icone">
+                        <span class="numErros" id="numeroErros"></span>
+                    </div>
+                </div>
             </div>
-            
-            <div>
-                <span id="questaoExibida"></span>
-            </div>
-            <div class="opcoes">
-                <span>
-                    <input type="radio" id="primeiraOpcao" name="option" value="alternativaA" />
-                    <label for="primeiraOpcao" id="labelOpcaoUm"></label>
-                </span>
-                <span>
-                    <input type="radio" id="segundaOpcao" name="option"  value="alternativaB" />
-                    <label for="segundaOpcao" id="labelOpcaoDois"></label>
-                </span>
-                <span>
-                    <input type="radio" id="terceiraOpcao" name="option"  value="alternativaC" />
-                    <label for="terceiraOpcao" id="labelOpcaoTres"></label>
-                </span>
-                <span>
-                    <input type="radio" id="quartaOpcao" name="option"  value="alternativaD" />
-                    <label for="quartaOpcao" id="labelOpcaoQuatro"></label>
-                </span>
-            </div>
-            <div>
-                <span>Acertos: <span id="numeroAcertos"></span></span>
-            </div>
-            <div>
-                <button id="butProxima"onclick="proximaPergunta()" disabled>Próxima</button>
+            <div class="questao">
+                <div class="pergunta">
+                    <span class="questaoExibida" id="questaoExibida"></span>
+                </div>
+                <div class="opcoes">
+                    <div class="cardOpcao">
+                        <span>
+                            <input type="radio" id="primeiraOpcao" name="option" value="alternativaA" />
+                            <label for="primeiraOpcao" id="labelOpcaoUm"></label>
+                        </span>
+                    </div>
+                    <div class="cardOpcao">
+                        <span>
+                            <input type="radio" id="segundaOpcao" name="option"  value="alternativaB" />
+                            <label for="segundaOpcao" id="labelOpcaoDois"></label>
+                        </span>
+                    </div>
+                    <div class="cardOpcao">
+                        <span>
+                            <input type="radio" id="terceiraOpcao" name="option"  value="alternativaC" />
+                            <label for="terceiraOpcao" id="labelOpcaoTres"></label>
+                        </span>
+                    </div>
+                    <div class="cardOpcao">
+                        <span>
+                            <input type="radio" id="quartaOpcao" name="option"  value="alternativaD" />
+                            <label for="quartaOpcao" id="labelOpcaoQuatro"></label>
+                        </span>
+                    </div>
+                </div>
+                <div class="butProxima">
+                    <button id="butProxima"onclick="proximaPergunta()" disabled>Próxima</button>
+                </div>
             </div>
         </div>
 

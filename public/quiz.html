@@ -6,13 +6,63 @@
     <title>Brawl Stars Web | Quiz</title>
     <link rel="stylesheet" href="css/quiz.css">
     <script src="js/quiz.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="header">
+        <div class="logoTopo">
+            <div class="estrela">
+                <img src="img/logoEstrela.png" alt="Logo estrela Brawl">
+            </div>
+            <div class="nome">
+                <img src="img/logoNome.png" alt="Logo nome Brawl Stars">
+            </div>
+        </div>
+        <div class="navbar">
+            <li>
+                <a href="home.html">INÍCIO</a>
+            </li>
+            <li class="agora">
+                <a href="#">QUIZ</a>
+            </li>
+            <li>
+                <a href="dashboard.html">DASHBOARD</a>
+            </li>
+        </div>
+        <div class="perfil">
+            <img src="img/caveiraAmarela.png" alt="Caveira Brawl">
+            <div class="text">
+                <p>NOME JOGADOR</p>
+                <div class="trofeu">
+                    <img src="img/trofeuAmarelo.png" alt="Ícone troféu">
+                    <p>1000</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="banner">
         <div class="cardInicio" id="inicio">
-            <h3>Bem-vindo ao Quiz</h3>
-            <p>Bla Bla Bla</p>
-            <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+            <div class="tits">
+                <div class="cardEstrela">
+                    <img src="img/estrela.png" alt="Estrela Brawl">
+                </div>
+                <div class="text">
+                    <h2 class="tit1">QUIZ</h2>
+                    <h2 class="tit2">BRAWL STARS</h2>
+                </div>
+            </div>
+            <div class="text">
+                <p>Teste seus conhecimentos <br> sobre o universo do Brawl Stars!</p>
+            </div>
+            <div class="butIniciar">
+                <button onclick="iniciarQuiz()">INICIAR QUIZ</button>
+            </div>
+            <div class="caixa">
+                <img src="img/megacaixa.png" alt="Megacaixa Brawl">
+            </div>
+            <div class="personagem">
+                <img src="img/corvoInvertido.png" alt="Spike personagem Brawl">
+            </div>
         </div>
 
         <div class="cardQuiz escondido" id="quiz" >

@@ -1,27 +1,211 @@
 body{
     margin: 0;
     height: 100vh;
+    background-image: url(../img/fundoQuiz.png);
+}
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.5));
+    pointer-events: none;
 }
 .banner {
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../img/fundoCadastro.png);
-    min-height: 710px;
+    min-height: 600px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.escondido {
+    display: none !important;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 280px;
+    margin-right: 320px;
+}
+.header .logoTopo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.header .estrela img{
+    margin-top: 2px;
+    width: 80px;
+    height: 80px;
+}
+.header .nome img{
+    width: 150px;
+    height: 80px;
+}
+.header .navbar {
+display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.header .navbar li {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+.header .navbar li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+.header .navbar .agora a {
+    color: #facc15;
+}
+.header .perfil {
+    width: 180px;
+    height: 60px;
+    background-color: #0117664c;
+    border: 1px solid #012dc8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header .perfil img{
+    margin-left: 3px;
+    width: 50px;
+    height: 50px;
+}
+.header .perfil .text{
+    margin-top: 5px;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.header .perfil .text .trofeu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -10px;
+}
+.header .perfil .text img{
+    width: 25px;
+    height: 25px;
+}
+.header .perfil .text p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+ /* cards  */
 .banner .cardInicio {
-    width: 500px;
-    height: 400px;
+    width: 650px;
+    height: 450px;
     background-color: #012dc8;
     border-radius: 20px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: visible;  
 }
+.cardInicio .tits{
+    display: flex;
+    flex-direction: row;
+}
+.cardInicio .tits .cardEstrela img{
+    width: 130px;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.cardInicio .tits .text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-top: 15px;
+}
+.cardInicio h2{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 55px;
+}
+.cardInicio .tits .tit1{
+    margin-bottom: 2px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px 0px #000;
+}
+.cardInicio .tits .tit2{
+    margin-top: 2px;
+    margin-bottom: 20px;
+    color: #facc15;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px 0px #000;
+}
+.cardInicio .text{
+    margin-bottom: 30px;
+}
+.cardInicio .text p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.cardInicio .final{
+    display: flex;
+    flex-direction: row;
+}
+.cardInicio .caixa{
+    margin-top: 80px;
+}
+.cardInicio .caixa img{
+    position: absolute;
+    bottom: -20px;
+    left: -120px;
+    width: 300px;
+    filter: drop-shadow(0 15px 20px rgba(0,0,0,0.5));
+}
+.cardInicio .personagem{
+    margin-top: 10px;
+}
+.cardInicio .personagem img{
+    position: absolute;
+    bottom: 10px;
+    right: -140px;
+    width: 350px;
+    filter: drop-shadow(0 15px 20px rgba(0,0,0,0.5));
+}
+.cardInicio .butIniciar button{
+    bottom: 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #facc15;
+    box-shadow:
+    0 6px 0 #cc8f00,   
+    0 10px 20px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+.cardInicio .butIniciar button:hover {
+    transform: scale(1.02);
+}
+
+
 .banner .cardQuiz {
     width: 500px;
     height: 400px;
@@ -32,11 +216,17 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.escondido {
-    display: none !important;
-}
 .cardQuiz .opcoes {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+
+
+.banner .cardFinal {
+    width: 500px;
+    height: 400px;
+    background-color: #012dc8;
+    border-radius: 20px;
 }

@@ -49,7 +49,7 @@ let listaPerguntas = [
         alternativaA: "Alta resistência para absorver dano",
         alternativaB: "Ataques de longo alcance contínuo",
         alternativaC: "Capacidade de curar aliados constantemente",
-        alternativaD: "Alto dano em curto tempo e foco em eliminar rapidamente um alvo isolado",
+        alternativaD: "Alto dano em curto tempo e foco em eliminar rapidamente um alvo",
         alternativaCorreta: "alternativaD"
     },
 
@@ -76,7 +76,7 @@ let listaPerguntas = [
        alternativaA: "Porque reduz o tempo de partida",
        alternativaB: "Porque impede o uso de habilidades inimigas",
        alternativaC: "Porque aumenta automaticamente o dano do time",
-       alternativaD: "Porque define as vantagens e desvantagens contra a composição adversária",
+       alternativaD: "Porque define os pontos fortes e fracos contra o adversário",
        alternativaCorreta: "alternativaD"
     },
     
@@ -85,7 +85,7 @@ let listaPerguntas = [
         alternativaA: "Porque altera o tempo de recarga",
         alternativaB: "Porque define automaticamente o vencedor",
         alternativaC: "Porque muda a quantidade de vida do personagem",
-        alternativaD: "Porque o layout do mapa favorece diferentes alcances e estilos de jogo",
+        alternativaD: "Porque o layout favorece diferentes alcances e estilos de jogo",
         alternativaCorreta: "alternativaD"
     }
 ];
@@ -196,11 +196,13 @@ function finalizarQuiz(){
     let mensagem = "";
 
     if (acertosF <= 3) {
-        mensagem = "Precisa melhorar";
-    } else if (acertosF <= 7) {
-        mensagem = "Muito bem! Continue treinando!";
-    } else {
-        mensagem = "BOM DEMAIS!";
+        mensagem = "Você ainda está aprendendo... tente novamente e mostre sua força!";
+    } 
+    else if (acertosF <= 7) {
+        mensagem = "Mandou bem! Continue treinando para virar uma lenda da arena!";
+    } 
+    else {
+        mensagem = "INCRÍVEL! Você domina o Brawl Stars como um verdadeiro campeão!";
     }
 
     document.getElementById("mensagemFinal").innerText = mensagem;

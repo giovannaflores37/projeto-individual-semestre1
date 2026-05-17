@@ -121,15 +121,35 @@
         </div>
 
         <div class="cardFinal escondido" id="final">
-            <h1>QUIZ CONCLUÍDO!</h1>
-            <div>
-                <p>VOCÊ ACERTOU</p>
-                <h2><span id="acertosFinal"></span> / <span id="totalQuestoesFinal"></span></h2>
-            </div>
-            <div id="mensagemFinal"></div>
-            <div>
-                <button onclick="reiniciarQuiz()">TENTAR NOVAMENTE</button>
-                <button onclick="window.location.href='home.html'">VOLTAR AO INÍCIO</button>
+            <div class="conteudoFinal">
+                <div class="ladoEsquerdo">
+                    <img src="img/elprimo.webp" alt="El primo Personagem Brawl">
+                </div>
+                <div class="ladoDireito">
+                    <h1 class="tit">QUIZ CONCLUÍDO!</h1>
+                    <div class="centro">
+                        <div class="pontuacao">
+                            <p>VOCÊ ACERTOU</p>
+                            <h2><span class="acertosNumero" id="acertosFinal"></span> / <span id="totalQuestoesFinal"></span>
+                            </h2>
+                        </div>
+                        <div class="imgLadoD">
+                            <img src="img/trofeu.png" alt="Trofeu Brawl">
+                        </div>
+                    </div>
+                    <div class="mensagemFinal">
+                        <span id="mensagemFinal"></span>
+                    </div>
+                    <div class="acoes">
+                        <div class="cima">
+                            <button class="reiniciarQuiz" onclick="reiniciarQuiz()">TENTAR NOVAMENTE</button>
+                            <button class="voltarInicio" onclick="window.location.href='home.html'">VOLTAR AO INÍCIO</button>
+                        </div>
+                        <div class="baixo">
+                            <button class="irDash" onclick="window.location.href='dashboard.html'">IR PARA DASHBOARD</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

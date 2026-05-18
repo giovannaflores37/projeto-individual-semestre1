@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fundoQuiz.png);
+
+    background-attachment: fixed;
+}
+.header {
+    background-color: #1e2a78;
+}
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+    height: 60px;
+    margin-right: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+.navbar li {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+.navbar li .iconNav img,
+.navbar li .iconNav2 img {
+    display: block;
+}
+.iconNav img {
+    width: 20px;
+    height: 20px;
+}
+.iconNav2 img {
+    width: 25px;
+    height: 25px;
+}
+.navbar li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+.navbar .agora a {
+    color: #facc15;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo .introducao{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo .introducao h1{
+    margin-bottom: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.conteudo .introducao p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 500px;
+    text-align: center;
+}
+
+.escondido {
+    display: none !important;
+}
+.conteudo .cardGrande{
+    width: 1225px;
+    height: 600px;
+    background-color: #0d1334;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+.conteudo .cardGrande .buts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+.conteudo .cardGrande .buts button{
+    height: 60px;
+    min-width: 150px;
+    padding: 0 20px;
+    border-radius: 14px;
+    border: 2px solid #2a367e; 
+    background: linear-gradient(180deg, #141b4d, #0c1030); 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.conteudo .cardGrande .buts button img{
+    width: 35px;
+}
+
+.conteudo .cardGrande .explicacao{
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(5,10,40,0.88), rgba(5,10,40,0.88)), url(../img/fundoCadastro.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 15px rgba(255, 59, 107, 0.25);
+    border-radius: 15px;
+    width: 1150px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.conteudo .cardGrande .explicacao .conteudo{
+    display: flex;
+    flex-direction: row;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .tit{
+    display: flex;
+    flex-direction: row;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .tit img{
+    margin-top: 3px;
+    width: 75px;
+} 
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .tit h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .text p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 20px;
+    width: 400px;
+    text-align: center;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos .forte{
+    width: 270px;
+    height: 100px;
+    background-color: #066b32b2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos .forte img{
+    width: 50px;
+    margin: 10px;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos .forte .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos .fraco{
+    width: 270px;
+    height: 100px;
+    background-color: #911f0594;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos .fraco img{
+    width: 75px;
+    margin-top: 8px;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos .fraco .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoEsquerdo .pontos p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 200px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.conteudo .cardGrande .explicacao .conteudo .ladoDireito img{
+    width: 520px;
+    margin-left: 50px;
+    filter: drop-shadow(0 15px 20px rgba(0,0,0,0.5));
+}

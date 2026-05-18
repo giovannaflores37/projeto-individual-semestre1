@@ -4,8 +4,357 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brawl Stars Web | Brawlers</title>
+    <link rel="stylesheet" href="css/brawlers.css">
+    <script src="js/brawlers.js" defer></script>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+            <img src="img/logo.webp" alt="Logo Brawl Stars">
+            </div>
+            <div class="navbar">
+                <li>
+                    <div class="iconNav">
+                        <img src="img/home_branco.png" alt="Ícone inicio">
+                    </div>
+                    <a href="home.html">INÍCIO</a>
+                </li>
+                <li class="agora">
+                    <div class="iconNav2">
+                        <img src="img/caveira.png" alt="Ícone inicio">
+                    </div>
+                    <a href="#">BRAWLERS</a>
+                </li>
+                <li>
+                    <div class="iconNav">
+                        <img src="img/mira_branco.png" alt="Ícone inicio">
+                    </div>
+                    <a href="modos.html">MODOS DE JOGO</a>
+                </li>
+                <li>
+                    <div class="iconNav">
+                        <img src="img/mao_branco.png" alt="Ícone inicio">
+                    </div>
+                    <a href="mecanicas.html">MECÂNICAS</a>
+                </li>
+                <li>
+                    <div class="iconNav">
+                        <img src="img/trofeu_branco.png" alt="Ícone inicio">
+                    </div>
+                    <a href="competitivo.html">COMPETITIVO</a>
+                </li>
+                <li>
+                    <div class="iconNav">
+                        <img src="img/quiz_branco.png" alt="Ícone inicio">
+                    </div>
+                    <a href="quiz.html">QUIZ</a>
+                </li>
+                <li>
+                    <div class="iconNav">
+                        <img src="img/dash_branco.png" alt="Ícone inicio">
+                    </div>
+                    <a href="dashboard.html">DASHBOARD</a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="introducao">
+            <h1>BRAWLERS</h1>
+            <p>Para facilitar a estratégia durante as partidas, os Brawlers são divididos em classes, que indicam sua função principal na batalha. <br>
+            Conheça todas as classes e os guerreiros do Brawl Stars. Cada um tem um papel único e habilidades incríveis!</p>
+        </div>
+        <div class="cardGrande">
+            <div class="buts">
+                <button onclick="mstDestruidor()">
+                    <img src="img/iconeDestruidores.png" alt="Icone destruidores">
+                    DESTRUIDOR
+                </button>
+                <button onclick="mstAlgoz()">
+                    <img src="img/iconeAlgozes.png" alt="Icone algozes">
+                    ALGOZ
+                </button>
+                <button onclick="mstTiroPreciso()">
+                    <img src="img/iconeTiroPreciso.png" alt="Icone Tiro preciso">
+                    TIRO PRECISO
+                </button>
+                <button onclick="mstDetonador()">
+                    <img src="img/iconeDetonadores.png" alt="Icone detonador">
+                    DETONADOR
+                </button>
+                <button onclick="mstTanque()">
+                    <img src="img/iconeTanque.png" alt="Icone Tanque">
+                    TANQUE
+                </button>
+                <button onclick="mstSuporte()">
+                    <img src="img/iconeSuporte.png" alt="Icone Suporte">
+                    SUPORTE
+                </button>
+                <button onclick="mstControle()">
+                    <img src="img/iconeControle.png" alt="Icone Controle">
+                    CONTROLE
+                </button>
+            </div>
+            <div class="explicacao">
+                <div id="conteudo1" class="conteudo">
+                    <div class="ladoEsquerdo">
+                        <div class="tit">
+                            <div class="iconeClasse">
+                                <img src="img/iconeDestruidores.png" alt="Icone destruidores">
+                            </div>
+                            <h1>DESTRUIDOR</h1>
+                        </div>
+                        <div class="text">
+                            <p>Brawlers que combinam alto dano com uma boa quantidade de vida, sendo ideais para confrontos diretos.</p>
+                        </div>
+                        <div class="pontos">
+                            <div class="forte">
+                                <div class="imgForte">
+                                    <img src="img/joia.png" alt="Forte">
+                                </div>
+                                <div class="text">
+                                    <h3>FORTES CONTRA</h3>
+                                    <p>Tanques e Algozes</p>
+                                </div>
+                            </div>
+                            <div class="fraco">
+                                <div class="imgFraco">
+                                    <img src="img/naojoia.png" alt="Fraco">
+                                </div>
+                                <div class="text">
+                                    <h3>FRACOS CONTRA</h3>
+                                    <p>Tiro Preciso e Detonadores</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ladoDireito">
+                        <img src="img/BrawlersDestruidores.png" alt="">
+                    </div>
+                </div>
+                <div id="conteudo2" class="conteudo escondido">
+                    <div class="ladoEsquerdo">
+                        <div class="tit">
+                            <div class="iconeClasse">
+                                <img src="img/iconeAlgozes.png" alt="Icone algozes">
+                            </div>
+                            <h1>ALGOZ</h1>
+                        </div>
+                        <div class="text">
+                            <p>Brawlers que combinam alto dano com uma boa quantidade de vida, sendo ideais para confrontos diretos.</p>
+                        </div>
+                        <div class="pontos">
+                            <div class="forte">
+                                <div class="imgForte">
+                                    <img src="img/joia.png" alt="Forte">
+                                </div>
+                                <div class="text">
+                                    <h3>FORTES CONTRA</h3>
+                                    <p>Tiro Preciso e Detonadores</p>
+                                </div>
+                            </div>
+                            <div class="fraco">
+                                <div class="imgFraco">
+                                    <img src="img/naojoia.png" alt="Fraco">
+                                </div>
+                                <div class="text">
+                                    <h3>FRACOS CONTRA</h3>
+                                    <p>Tanques e Destruidores</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ladoDireito">
+                        <img src="img/BrawlersDestruidores.png" alt="">
+                    </div>
+                </div>
+                <div id="conteudo3" class="conteudo escondido">
+                    <div class="ladoEsquerdo">
+                        <div class="tit">
+                            <div class="iconeClasse">
+                                <img src="img/iconeTiroPreciso.png" alt="Icone Tiro preciso">
+                            </div>
+                            <h1>TIRO PRECISO</h1>
+                        </div>
+                        <div class="text">
+                            <p>Brawlers que combinam alto dano com uma boa quantidade de vida, sendo ideais para confrontos diretos.</p>
+                        </div>
+                        <div class="pontos">
+                            <div class="forte">
+                                <div class="imgForte">
+                                    <img src="img/joia.png" alt="Forte">
+                                </div>
+                                <div class="text">
+                                    <h3>FORTES CONTRA</h3>
+                                    <p>Inimigos à distância</p>
+                                </div>
+                            </div>
+                            <div class="fraco">
+                                <div class="imgFraco">
+                                    <img src="img/naojoia.png" alt="Fraco">
+                                </div>
+                                <div class="text">
+                                    <h3>FRACOS CONTRA</h3>
+                                    <p>Algozes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ladoDireito">
+                        <img src="img/BrawlersDestruidores.png" alt="">
+                    </div>
+                </div>
+                <div id="conteudo4" class="conteudo escondido">
+                    <div class="ladoEsquerdo">
+                        <div class="tit">
+                            <div class="iconeClasse">
+                                <img src="img/iconeDetonadores.png" alt="Icone Detonadores">
+                            </div>
+                            <h1>DETONADOR</h1>
+                        </div>
+                        <div class="text">
+                            <p>Brawlers que combinam alto dano com uma boa quantidade de vida, sendo ideais para confrontos diretos.</p>
+                        </div>
+                        <div class="pontos">
+                            <div class="forte">
+                                <div class="imgForte">
+                                    <img src="img/joia.png" alt="Forte">
+                                </div>
+                                <div class="text">
+                                    <h3>FORTES CONTRA</h3>
+                                    <p>Inimigos escondidos</p>
+                                </div>
+                            </div>
+                            <div class="fraco">
+                                <div class="imgFraco">
+                                    <img src="img/naojoia.png" alt="Fraco">
+                                </div>
+                                <div class="text">
+                                    <h3>FRACOS CONTRA</h3>
+                                    <p>Tanques e Algozes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ladoDireito">
+                        <img src="img/BrawlersDestruidores.png" alt="">
+                    </div>
+                </div>
+                <div id="conteudo5" class="conteudo escondido">
+                    <div class="ladoEsquerdo">
+                        <div class="tit">
+                            <div class="iconeClasse">
+                                <img src="img/iconeTanque.png" alt="Icone Tanque">
+                            </div>
+                            <h1>TANQUE</h1>
+                        </div>
+                        <div class="text">
+                            <p>Brawlers que combinam alto dano com uma boa quantidade de vida, sendo ideais para confrontos diretos.</p>
+                        </div>
+                        <div class="pontos">
+                            <div class="forte">
+                                <div class="imgForte">
+                                    <img src="img/joia.png" alt="Forte">
+                                </div>
+                                <div class="text">
+                                    <h3>FORTES CONTRA</h3>
+                                    <p>Algozes</p>
+                                </div>
+                            </div>
+                            <div class="fraco">
+                                <div class="imgFraco">
+                                    <img src="img/naojoia.png" alt="Fraco">
+                                </div>
+                                <div class="text">
+                                    <h3>FRACOS CONTRA</h3>
+                                    <p>Destruidores</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ladoDireito">
+                        <img src="img/BrawlersDestruidores.png" alt="">
+                    </div>
+                </div>
+                <div id="conteudo6" class="conteudo escondido">
+                    <div class="ladoEsquerdo">
+                        <div class="tit">
+                            <div class="iconeClasse">
+                                <img src="img/iconeSuporte.png" alt="Icone Suporte">
+                            </div>
+                            <h1>SUPORTE</h1>
+                        </div>
+                        <div class="text">
+                            <p>Brawlers que combinam alto dano com uma boa quantidade de vida, sendo ideais para confrontos diretos.</p>
+                        </div>
+                        <div class="pontos">
+                            <div class="forte">
+                                <div class="imgForte">
+                                    <img src="img/joia.png" alt="Forte">
+                                </div>
+                                <div class="text">
+                                    <h3>FORTES CONTRA</h3>
+                                    <p>Estratégias de equipe</p>
+                                </div>
+                            </div>
+                            <div class="fraco">
+                                <div class="imgFraco">
+                                    <img src="img/naojoia.png" alt="Fraco">
+                                </div>
+                                <div class="text">
+                                    <h3>FRACOS CONTRA</h3>
+                                    <p>Confrontos diretos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ladoDireito">
+                        <img src="img/BrawlersDestruidores.png" alt="">
+                    </div>
+                </div>
+                <div id="conteudo7" class="conteudo escondido">
+                    <div class="ladoEsquerdo">
+                        <div class="tit">
+                            <div class="iconeClasse">
+                                <img src="img/iconeControle.png" alt="Icone Controle">
+                            </div>
+                            <h1>CONTROLE</h1>
+                        </div>
+                        <div class="text">
+                            <p>Brawlers que combinam alto dano com uma boa quantidade de vida, sendo ideais para confrontos diretos.</p>
+                        </div>
+                        <div class="pontos">
+                            <div class="forte">
+                                <div class="imgForte">
+                                    <img src="img/joia.png" alt="Forte">
+                                </div>
+                                <div class="text">
+                                    <h3>FORTES CONTRA</h3>
+                                    <p>Pressionar o adversário</p>
+                                </div>
+                            </div>
+                            <div class="fraco">
+                                <div class="imgFraco">
+                                    <img src="img/naojoia.png" alt="Fraco">
+                                </div>
+                                <div class="text">
+                                    <h3>FRACOS CONTRA</h3>
+                                    <p>Confrontos individuais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ladoDireito">
+                        <img src="img/BrawlersDestruidores.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="personagens">
+
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
